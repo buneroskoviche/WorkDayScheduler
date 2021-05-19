@@ -1,2 +1,4 @@
-// Use .moment() to get the current day, and put it in the currentDay span
-$("#currentDay").text(`Today is ${moment().format("MMM Do, YYYY")}`)
+// Use .moment() and setInterval to display the current date and time in the currentDay span
+setInterval(() => {
+    $("#currentDay").text(`It is ${moment().format("MMM Do, YYYY h:mm:ss")}`)
+}, 1000);
