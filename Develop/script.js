@@ -54,4 +54,11 @@ for (let i = 0; i < timeOfDay.length; i++) {
     $inputGroup.append($hour).append($textArea).append($button);
     $timeBlock.append($inputGroup);
     $container.append($timeBlock);
+    // Load any saved values into the text area
+    for (let i = 0; i < savedPlans.length; i++) {
+        if ($inputGroup.parent().attr('id') === savedPlans[i].slot) {
+            console.log("got one");
+            $textArea.val(savedPlans[i].input);
+        }
+    }
 };
