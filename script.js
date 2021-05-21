@@ -40,7 +40,7 @@ for (let i = 0; i < timeOfDay.length; i++) {
     } else {
         $textArea.addClass('past');
     }
-    // Give the button a click listener to save the time slot input
+    // Give the button a click listener to save the input
     $button.on('click', function(event) {
         event.preventDefault();
         const newPlan = {
@@ -57,7 +57,6 @@ for (let i = 0; i < timeOfDay.length; i++) {
     // Load any saved values into the text area
     for (let i = 0; i < savedPlans.length; i++) {
         if ($inputGroup.parent().attr('id') === savedPlans[i].slot) {
-            console.log("got one");
             $textArea.val(savedPlans[i].input);
         }
     }
