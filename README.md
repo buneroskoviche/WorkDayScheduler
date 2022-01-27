@@ -8,6 +8,6 @@ Users can enter values into the times slots to keep their dialy schedule organiz
 Press the save button to retain the information for later
 
 # Link
-https://buneroskoviche.github.io/WorkDayScheduler/
+https://dk-code93.github.io/WorkDayScheduler/
 
 # Screenshot 
